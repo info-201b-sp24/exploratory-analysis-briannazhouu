@@ -67,9 +67,16 @@ Include a chart
 Describe why you chose this chart and what information it reveals
 
 Here's an example of how to run an R script inside an RMarkdown file:
+setwd("~/Downloads")
+data <- read.csv("test.csv")
+print(data)
+install.packages("ggplot2")
+library(ggplot2)
+ggplot(data, aes(x = race, fill = workclass)) + 
+  geom_bar(position = "dodge") +
+  labs(x = "Race", y = "Count", fill = "Work Class", title = "Comparing Race and Work Class")
+{r, echo = FALSE, code = readLines("final-project-chart1.R")}
 
-``````{r, echo = FALSE, code = readLines("chart1_example.R")}
-```
 
 ### Chart 2
 
