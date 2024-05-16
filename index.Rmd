@@ -62,11 +62,6 @@ Describe why you included the table and what information it reveals
 
 ### Chart 1
 
-Include a chart
-
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
 setwd("~/Downloads")
 data <- read.csv("test.csv")
 print(data)
@@ -75,9 +70,9 @@ library(ggplot2)
 ggplot(data, aes(x = race, fill = workclass)) + 
   geom_bar(position = "dodge") +
   labs(x = "Race", y = "Count", fill = "Work Class", title = "Comparing Race and Work Class")
-{r, echo = FALSE, code = readLines("final-project-chart1.R")}
+#{r, echo = FALSE, code = readLines("final-project-chart1.R")}
 
-
+This chart displays race compared to workclass. As shown, White individuals have the highest rate of employment in all of the included classes (federal gov, local gov, private, self-emp-inc, self-emp-not-inc, and state-gov). The most noticeable disparity is the difference between White people that are employed in private work classes ccompared to those of other races. White has the highest number, with a count over 500, whereas Black comes in second, with less than 100. This not only shows that race plays a role in employment, but that its impact seems to be significant. Level of employment directly translates to level of income, which is why analyzing how race plays a role in employment is important to tackling racial disparities regarding income. 
 ### Chart 2
 
 Include a chart
