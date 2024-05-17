@@ -62,15 +62,14 @@ Describe why you included the table and what information it reveals
 
 ### Chart 1
 
-setwd("~/Downloads")
+setwd("~/Documents")
+setwd("~/Documents/archive")
 data <- read.csv("test.csv")
-print(data)
-install.packages("ggplot2")
-library(ggplot2)
-ggplot(data, aes(x = race, fill = workclass)) + 
-  geom_bar(position = "dodge") +
-  labs(x = "Race", y = "Count", fill = "Work Class", title = "Comparing Race and Work Class")
-#{r, echo = FALSE, code = readLines("final-project-chart1.R")}
+View(data)
+ ggplot(data, aes(x = education, fill = occupation)) +
+   geom_point(position = "dodge") + 
+   labs(x = "education", y = "count", fill = "occupation", title = "Comparing education and occupation")
+
 
 This chart displays race compared to workclass. 
 As shown, White individuals have the highest rate of employment in all of the included classes 
@@ -80,6 +79,7 @@ White has the highest number, with a count over 500, whereas Black comes in seco
 This not only shows that race plays a role in employment, but that its impact seems to be significant. 
 Level of employment directly translates to level of income, 
 which is why analyzing how race plays a role in employment is important to tackling racial disparities regarding income. 
+
 ### Chart 2
 setwd("~/Documents/archive")
 data <- read.csv("test.csv")
@@ -87,6 +87,7 @@ ggplot(data, mapping = aes(x = education, y = occupation, color = gender)) +
   geom_point(position = "dodge") + 
   labs(x = "Education", y = "Occupation", fill = "Gender", title = "Comparing 
        education and occupation")
+       
 
 #{r, echo = FALSE, code = readLines("SecondChart.R")}
 
