@@ -81,10 +81,20 @@ This not only shows that race plays a role in employment, but that its impact se
 Level of employment directly translates to level of income, 
 which is why analyzing how race plays a role in employment is important to tackling racial disparities regarding income. 
 ### Chart 2
+setwd("~/Documents/archive")
+data <- read.csv("test.csv")
+ggplot(data, mapping = aes(x = education, y = occupation, color = gender)) +
+  geom_point(position = "dodge") + 
+  labs(x = "Education", y = "Occupation", fill = "Gender", title = "Comparing 
+       education and occupation")
 
-Include a chart
+#{r, echo = FALSE, code = readLines("SecondChart.R")}
 
-Describe why you chose this chart and what information it reveals
+This chart displays education compared to occupation. 
+As shown, higher education has the highest rate of employment compare to those
+who dropped out early in shchool or didn't proceed higher education like college.
+Using this graph we don't need to know what exactly the people hired in that specific occupation, but this graph is used for seeing the contrast between high education and low education. As it's shown in the lower education, there only 2 jobs that are willing to employ them, whereas the higher education have much more job opportunities and the quality of the job is also much higher compare to the lower education. 
+
 
 ### Chart 3
 
