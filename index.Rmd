@@ -106,6 +106,16 @@ Using this graph we don't need to know what exactly the people hired in that spe
 
 ### Chart 3
 
-Include a chart
+summary_data <- test %>%
+  group_by(gender, education) %>%
+  summarise(Count = n()) %>%
+  ungroup()
 
-Describe why you chose this chart and what information it reveals
+ggplot(summary_data, aes(x = education, y = Count, fill = gender)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Comparison of Gender and Education",
+       x = "Education Level",
+       y = "Count",
+       fill = "Gender") 
+
+I chose this chart to display the gender differences in education level because it can help us understand how gender roles play a part in completion of education. We can see through the bar chart that most of the bars for males are higher than females in terms of education level. This could be attributed to the fact that more of the dataset were male, but it could also indicate that males completed higher levels of education in general. 
