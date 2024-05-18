@@ -2,7 +2,7 @@
 library(dplyr)
 
 # Load the dataset
-data <- read.csv("~/Desktop/test.csv")
+data <- read.csv("./income_data.csv")
 
 # Compute summary information
 summary_info <- list()
