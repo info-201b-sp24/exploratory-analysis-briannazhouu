@@ -91,7 +91,7 @@ The challenges or limitations that we might encounter is that not all people are
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+The dataset includes a total of 38,097 records. The most common race is White. There are 293 females and 606 males. The average age of individuals is approximately 38.5 years. The most common job for men is in craft repair, while the most common job for women is in administration or clerical work. These findings provide a comprehensive overview of the key demographic and job-related information in the dataset.
 
 ### Table
 
