@@ -95,9 +95,30 @@ The dataset includes a total of 38,097 records. The most common race is White. T
 
 ### Table
 
-Include a table of aggregate information
+Table of aggregate information
 
-Describe why you included the table and what information it reveals
+```{r, echo=TRUE, warning=FALSE}
+# Load necessary libraries
+library(dplyr)
+
+# Load the dataset
+data <- read.csv("./income_data.csv")
+
+aggregate_table <- data %>%
+  group_by(education) %>%
+  summarise(
+    `Total Count` = n(),
+    `Average Age` = round(mean(age, na.rm = TRUE), 1),
+    `Black Count` = sum(race == "Black", na.rm = TRUE),
+    `White Count` = sum(race == "White", na.rm = TRUE),
+    `Male Count` = sum(gender == "Male", na.rm = TRUE),
+    `Female Count` = sum(gender == "Female", na.rm = TRUE)
+  ) %>%
+  arrange(desc(`Total Count`))
+
+# Print the aggregate table
+print(aggregate_table)
+```
 
 ### Chart 1
 Link to display chart:
