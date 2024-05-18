@@ -118,4 +118,8 @@ ggplot(summary_data, aes(x = education, y = Count, fill = gender)) +
        y = "Count",
        fill = "Gender") 
 
-I chose this chart to display the gender differences in education level because it can help us understand how gender roles play a part in completion of education. We can see through the bar chart that most of the bars for males are higher than females in terms of education level. This could be attributed to the fact that more of the dataset were male, but it could also indicate that males completed higher levels of education in general. 
+I chose this chart to display the gender differences in education level because it 
+can help us understand how gender roles play a part in completion of education. 
+We can see through the bar chart that most of the bars for males are higher than females in terms of education level. 
+This could be attributed to the fact that more entries in the dataset were male instead of female, 
+but it could also indicate that males completed higher levels of education in general. 
