@@ -61,15 +61,22 @@ Include a table of aggregate information
 Describe why you included the table and what information it reveals
 
 ### Chart 1
+Link to display chart:
+file://Users/andrewyu/Dekstop/info%20prjct/chart1.html
 
-setwd("~/Documents")
-setwd("~/Documents/archive")
-data <- read.csv("test.csv")
-View(data)
- ggplot(data, aes(x = education, fill = occupation)) +
-   geom_point(position = "dodge") + 
-   labs(x = "education", y = "count", fill = "occupation", title = "Comparing education and occupation")
+code used to make chart:
+install.packages("tidyverse)
 
+{r setup, include=FALSE, , cache=TRUE}
+knitr::otps_chunck$set(echo = FALSE)
+library(tidyverse)
+library(readr)
+
+{r code}
+data <- read_csv("test.csv")
+ggplot(data, aes(x = race, fill = workclass)) + 
+  geom_bar(position = "dodge")
+  labs(x = "Race", y = "Count", fill = "Work Class", title = "Comparing Race and    Work Class")
 
 This chart displays race compared to workclass. 
 As shown, White individuals have the highest rate of employment in all of the included classes 
