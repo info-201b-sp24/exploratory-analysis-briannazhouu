@@ -5,7 +5,7 @@ output: html_document
 
 ## Project title
 
-Give your project a concise, interesting title that summarizes the entirety of your project
+How Income Levels are Affected by Race, Gender, and Education
 
 ### Authors
 
@@ -17,38 +17,77 @@ May 17, 2024
 
 ### Abstract
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+Our main question is: to what extent do disparities between racial groups in education  and occupation affect income? This question is important because we want to understand how the intersection of certain factors affect economic inequality in the United States. We plan to analyze data sets in order to recognize patterns and trends in how identity factors such as race and gender influence eventual economic outcomes. 
+
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+Income, race, gender, education
+
 
 ### Introduction  
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+Our project primarily investigates the data trends of income grouped by race. We will also be analyzing other considered factors such as gender, age, occupation, and education level. Our aim is to understand how these factors affect economic outcomes in households in the United States. Some research questions that motivate our research  topic are: to what extent do disparities between racial groups in education and occupation affect household income? What are the primary factors that seem to influence household income? How does the intersection of race, gender, and education level affect household income? We want to understand which of these factors may weigh more in terms of salary outcomes, and how these factors may help or hurt certain groups of people. This is an important concept to analyze in order to understand how certain privileged groups are able to stay privileged, and how difficult it can be for marginalized groups to break the cycle of poverty. Additionally, this is an important research topic as we can address systemic inequalities and find ways to develop attainable solutions. This can provide both systemic and historical contexts into how racialized institutions are still affecting our society today. We will be able to better understand how intersectionality and overlapping factors influence economic outcomes. 
+
 
 ### Related Work  
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+While our topic primarily focuses on income inequality as a result of racial disparities, there are many contributing factors to this inequality. Intersectionality is the idea that multiple forms of inequality or disadvantages sometimes compound themselves and create obstacles that often are not understood among conventional ways of thinking. Understanding that racial disparities are not the lone contributing factor to income inequality broadens the debate to consider other factors such as gender, education, sexuality, and other defining characteristics of unique individuals that can contribute to income inequality. The following three articles reaffirm the role race plays regarding income, as well as highlighting other contributing factors and providing possible solutions to combat it. 
+The first article by the U.S. Department of Treasury highlights racial inequality in the United States. They define racial inequality as the unequal distribution of resources, power and economic opportunity across race in a society. The article includes various statistics and graphs that depict the prevalence of the issue. For example, a graph showed that the median household income in 2020 was roughly $46,000 and $55,000 for Black and Hispanic workers, respectively, compared to $75,000 and $95,000 for white and Asian households. 
+“Racial Inequality in the United States.” U.S. Department of the Treasury, 21 July 2022, home.treasury.gov/news/featured-stories/racial-inequality-in-the-united-states#:~:text=In%20addition%2C%20Black%20and%20Hispanic,as%20shown%20in%20Figure%204. 
+The next article by the Pew Research Center reaffirms the inequality in income between races, but it adds another layer of complexity to the issue. Along with racial disparities, they also consider how other factors, such as gender, play a role in income inequality. They make this abundantly clear with the following statistics: In 2022, Black women earned 70% as much as White men and Hispanic women earned only 65% as much. The ratio for White women stood at 83% about the same as the earnings gap overall, while Asian women were closer to parity with White men, making 93% as much.
+Kochhar, Rakesh. “The Enduring Grip of the Gender Pay Gap.” Pew Research Center, Pew Research Center, 1 Mar. 2023, www.pewresearch.org/social-trends/2023/03/01/the-enduring-grip-of-the-gender-pay-gap/#:~:text=In%202022%2C%20Black%20women%20earned,%2C%20making%2093%25%20as%20much. 
+Lastly, another article by the Pew Research Center analyzes where the power lies when it comes to fighting income inequality. According to their research, most Americans agree that the federal government and large corporations hold high responsibility in reducing inequality. They included a graph that ranks the responsibility/power for a certain group to reduce inequality. The results are as follows: The federal government at 66%, large business and corporations at 62%, state governments at 52%, wealthy individuals at 46%, and lastly churches/other religious organizations at 13%. This shows that the solution to income inequality lies among those with positions of high power. 
+Juliana Menasce Horowitz, Ruth Igielnik and Rakesh Kochhar. “4. Views on Reducing Economic Inequality.” Pew Research Center, Pew Research Center, 9 Jan. 2020, www.pewresearch.org/social-trends/2020/01/09/views-on-reducing-economic-inequality/. 
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+> Where did you find the data? Please include a link to the data source
+https://www.kaggle.com/datasets/mastmustu/income 
+https://archive.ics.uci.edu/dataset/2/adult 
+
+> Who collected the data?
+Mustafa Fatakdawala.
+
+> How was the data collected or generated?
+Specific details about the methodology of data collection or generation are not provided on the dataset page. But usually data sets are collected from surveys, synthetic data generation or government records. 
+
+> Why was the data collected?
+Typically these datasets are used for analysis related to economic research or machine learning models.
+> How many observations (rows) are in your data? 
+The dataset includes over 32,000 observations.
+
+> How many features (columns) are in the data?
+There are 15 features in the dataset.
+
+
+> What, if any, ethical questions or questions of power do you need to consider when working with this data?
+Ensure that the data does not contain personally identifiable information. If it does, proper measures must be taken to anonymize the data to protect individuals' privacy.
+
+
+Analyze whether the dataset includes any biases towards certain groups based on race, gender, age, etc. This is crucial to avoid perpetuating or amplifying societal inequalities through your analysis.
+
+
+Consider how the data was collected. It’s important to know whether the individuals whose data is included provided informed consent and if the data collection methods were ethical.
+
+
+Reflect on how the results of your analysis might be used. Consider the potential social, economic, and political impacts, especially on vulnerable populations.
+
+
+> What are possible limitations or problems with this data? (at least 200 words)
+The Income Dataset from Kaggle, despite its usefulness for economic and demographic analysis, presents several challenges that could undermine its effectiveness and ethical integrity. The dataset lacks comprehensive documentation detailing the methodology of data collection, which raises questions about the accuracy and representativeness of the data. This gap in information makes it difficult to assess the reliability of any findings derived from the data. Also, there's concern about the completeness of the dataset. Missing values or incomplete records can skew analyses, leading to potentially biased outcomes that do not accurately reflect the population being studied.
+The dataset may harbor inherent biases if the data collection did not adequately control for a diverse and representative sample. Such biases can affect the generalizability of the results, potentially leading to conclusions that are not applicable to broader populations. Another significant issue is the timeliness of the data. If the data was collected in the past, it might not reflect current economic realities or demographic shifts, which can be crucial for studies intended to inform current policy or business decisions.
+Lastly, the use of personal income data involves several ethical and legal considerations, particularly concerning privacy and consent. If the data includes personally identifiable information or was collected without explicit consent, there could be serious ethical violations, alongside potential legal repercussions. 
+
 
 ### Implications
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+It can be seen that from the data that we analyze, it’s true that based on the data. That in terms of education they don’t really have that much disparities between them. The data seems to be heavily relying on what type of company that you worked for, like do you work for a local government or private company? Because this will likely make the disparities between the incomes more larger. It also seems that race is also a part of it by seeing how Asian-Pac-Islander have the lowest income even though they have the same amount of education or lower and working in the same type of company. Even if they work for a private company, it would still be low compared to the other races. In term of gender, it seems pretty fair that the women incomes are in that state because in terms of education or the type of company they worked for it’s seem that there aren’t that big gap of disparities between them, but that is true for some races, but for specific races, the disparities would be high.  
 
 ### Limitations & Challenges
-What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
+The challenges or limitations that we might encounter is that not all people are open or willing to share their incomes to strangers. It might also be uncomfortable for them to tell us what company they worked for or what is your relationship? Are you single, Married, or divorced? Or we ask about their education that they might be embarrassed of because they don’t have a good academic background or didn’t go to school or a dropout.  This type of information is necessary for our project and it’s this information that may be a little bit sensitive to talk about or people can be fully lying because they don’t want us to know. If so, then the data that we will collect would be useless because it’s not an accurate representation of people's incomes and it will impact our result of what the data tells us. It’s also important for us to keep the information confidential because of how these types of information can impact someone’s life based on what is used for. 
+
 
 ### Summary Information
 
