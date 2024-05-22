@@ -42,26 +42,31 @@ Juliana Menasce Horowitz, Ruth Igielnik and Rakesh Kochhar. “4. Views on Reduc
 
 ### The Dataset
 
-> Where did you find the data? Please include a link to the data source
+Where did you find the data? Please include a link to the data source
+
 https://www.kaggle.com/datasets/mastmustu/income 
 https://archive.ics.uci.edu/dataset/2/adult 
 
-> Who collected the data?
+**Who collected the data?**
+
 Mustafa Fatakdawala.
 
-> How was the data collected or generated?
+**How was the data collected or generated?**
+
 Specific details about the methodology of data collection or generation are not provided on the dataset page. But usually data sets are collected from surveys, synthetic data generation or government records. 
 
-> Why was the data collected?
+**Why was the data collected?**
+
 Typically these datasets are used for analysis related to economic research or machine learning models.
-> How many observations (rows) are in your data? 
+-How many observations (rows) are in your data? 
 The dataset includes over 32,000 observations.
 
-> How many features (columns) are in the data?
+**How many features (columns) are in the data?**
+
 There are 15 features in the dataset.
 
+**What, if any, ethical questions or questions of power do you need to consider when working with this data?**
 
-> What, if any, ethical questions or questions of power do you need to consider when working with this data?
 Ensure that the data does not contain personally identifiable information. If it does, proper measures must be taken to anonymize the data to protect individuals' privacy.
 
 
@@ -73,12 +78,11 @@ Consider how the data was collected. It’s important to know whether the indivi
 
 Reflect on how the results of your analysis might be used. Consider the potential social, economic, and political impacts, especially on vulnerable populations.
 
+**What are possible limitations or problems with this data? (at least 200 words)**
 
-> What are possible limitations or problems with this data? (at least 200 words)
 The Income Dataset from Kaggle, despite its usefulness for economic and demographic analysis, presents several challenges that could undermine its effectiveness and ethical integrity. The dataset lacks comprehensive documentation detailing the methodology of data collection, which raises questions about the accuracy and representativeness of the data. This gap in information makes it difficult to assess the reliability of any findings derived from the data. Also, there's concern about the completeness of the dataset. Missing values or incomplete records can skew analyses, leading to potentially biased outcomes that do not accurately reflect the population being studied.
 The dataset may harbor inherent biases if the data collection did not adequately control for a diverse and representative sample. Such biases can affect the generalizability of the results, potentially leading to conclusions that are not applicable to broader populations. Another significant issue is the timeliness of the data. If the data was collected in the past, it might not reflect current economic realities or demographic shifts, which can be crucial for studies intended to inform current policy or business decisions.
 Lastly, the use of personal income data involves several ethical and legal considerations, particularly concerning privacy and consent. If the data includes personally identifiable information or was collected without explicit consent, there could be serious ethical violations, alongside potential legal repercussions. 
-
 
 ### Implications
 
