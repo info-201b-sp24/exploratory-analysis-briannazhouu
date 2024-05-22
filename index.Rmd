@@ -42,7 +42,7 @@ Juliana Menasce Horowitz, Ruth Igielnik and Rakesh Kochhar. “4. Views on Reduc
 
 ### The Dataset
 
-Where did you find the data? Please include a link to the data source
+**Where did you find the data? Please include a link to the data source**
 
 https://www.kaggle.com/datasets/mastmustu/income 
 https://archive.ics.uci.edu/dataset/2/adult 
