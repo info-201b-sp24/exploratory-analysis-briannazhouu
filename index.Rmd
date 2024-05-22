@@ -97,7 +97,7 @@ The dataset includes a total of 38,097 records. The most common race is White. T
 
 Table of aggregate information
 
-```{r, echo=TRUE, warning=FALSE}
+```{r message=FALSE, warning=FALSE, cache=TRUE}
 # Load necessary libraries
 library(dplyr)
 
@@ -127,16 +127,16 @@ file://Users/andrewyu/Dekstop/info%20prjct/chart1.html
 code used to make chart:
 install.packages("tidyverse)
 
-{r setup, include=FALSE, , cache=TRUE}
-knitr::otps_chunck$set(echo = FALSE)
+```{r results='hide', message=FALSE, warning=FALSE}
+
 library(tidyverse)
 library(readr)
 
-{r code}
-data <- read_csv("test.csv")
+data <- read_csv("./income_data.csv")
 ggplot(data, aes(x = race, fill = workclass)) + 
-  geom_bar(position = "dodge")
+  geom_bar(position = "dodge") +
   labs(x = "Race", y = "Count", fill = "Work Class", title = "Comparing Race and    Work Class")
+```
 
 This chart displays race compared to workclass. 
 As shown, White individuals have the highest rate of employment in all of the included classes 
@@ -148,13 +148,13 @@ Level of employment directly translates to level of income,
 which is why analyzing how race plays a role in employment is important to tackling racial disparities regarding income. 
 
 ### Chart 2
-setwd("~/Documents/archive")
-data <- read.csv("test.csv")
+```{r results='hide', message=FALSE, warning=FALSE}
 ggplot(data, mapping = aes(x = education, y = occupation, color = gender)) +
   geom_point(position = "dodge") + 
   labs(x = "Education", y = "Occupation", fill = "Gender", title = "Comparing 
        education and occupation")
        
+```
 
 #{r, echo = FALSE, code = readLines("SecondChart.R")}
 
@@ -166,7 +166,8 @@ Using this graph we don't need to know what exactly the people hired in that spe
 
 ### Chart 3
 
-summary_data <- test %>%
+```{r results='hide', message=FALSE, warning=FALSE}
+summary_data <- data %>%
   group_by(gender, education) %>%
   summarise(Count = n()) %>%
   ungroup()
@@ -177,6 +178,7 @@ ggplot(summary_data, aes(x = education, y = Count, fill = gender)) +
        x = "Education Level",
        y = "Count",
        fill = "Gender") 
+```
 
 I chose this chart to display the gender differences in education level because it 
 can help us understand how gender roles play a part in completion of education. 
